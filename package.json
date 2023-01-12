@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "webpack --env.mode=production --progress",
+    "build": "webpack --env.mode=production --progress && --openssl-legacy-provider",
     "serve": "webpack-dev-server --progress"
   },
   "devDependencies": {
