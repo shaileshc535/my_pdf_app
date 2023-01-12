@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "webpack --openssl-legacy-provider --env.mode=production --progress",
+    "build": "webpack --env.mode=production --progress",
     "build1": "webpack --env.mode=production --progress",
     "build2": "webpack --env.mode=production --progress && --openssl-legacy-provider",
     "build3": "webpack --env.mode=production --progress && export NODE_OPTIONS=--openssl-legacy-provider",
