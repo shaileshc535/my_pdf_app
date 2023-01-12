@@ -1,1 +1,1271 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{143:function(e,t,n){"use strict";n.d(t,"a",(function(){return a})),n.d(t,"b",(function(){return s}));var r=[{name:"pdfjsLib",src:"https://unpkg.com/pdfjs-dist@2.3.200/build/pdf.min.js"},{name:"PDFLib",src:"https://unpkg.com/pdf-lib@1.4.0/dist/pdf-lib.min.js"},{name:"download",src:"https://unpkg.com/downloadjs@1.4.7"},{name:"makeTextPDF",src:"https://cdn.jsdelivr.net/gh/snamoah/react-pdf-editor/public/makeTextPDF.js"},{name:"w3Color",src:"https://www.w3schools.com/lib/w3color.js"}],o={},a=function(e){return o[e]},s=function(){r.forEach((function(e){var t=e.name,n=e.src;o[t]=new Promise((function(e,r){var o=document.createElement("script");o.src=n,o.onload=function(){e(window[t]),console.log(t+" is loaded.")},o.onerror=function(){return r("The script "+t+" didn't load correctly.")},document.body.appendChild(o)}))}))}},383:function(e,t,n){n(410),e.exports=n(409)},386:function(e,t,n){var r={"./af":224,"./af.js":224,"./ar":225,"./ar-dz":226,"./ar-dz.js":226,"./ar-kw":227,"./ar-kw.js":227,"./ar-ly":228,"./ar-ly.js":228,"./ar-ma":229,"./ar-ma.js":229,"./ar-sa":230,"./ar-sa.js":230,"./ar-tn":231,"./ar-tn.js":231,"./ar.js":225,"./az":232,"./az.js":232,"./be":233,"./be.js":233,"./bg":234,"./bg.js":234,"./bm":235,"./bm.js":235,"./bn":236,"./bn-bd":237,"./bn-bd.js":237,"./bn.js":236,"./bo":238,"./bo.js":238,"./br":239,"./br.js":239,"./bs":240,"./bs.js":240,"./ca":241,"./ca.js":241,"./cs":242,"./cs.js":242,"./cv":243,"./cv.js":243,"./cy":244,"./cy.js":244,"./da":245,"./da.js":245,"./de":246,"./de-at":247,"./de-at.js":247,"./de-ch":248,"./de-ch.js":248,"./de.js":246,"./dv":249,"./dv.js":249,"./el":250,"./el.js":250,"./en-au":251,"./en-au.js":251,"./en-ca":252,"./en-ca.js":252,"./en-gb":253,"./en-gb.js":253,"./en-ie":254,"./en-ie.js":254,"./en-il":255,"./en-il.js":255,"./en-in":256,"./en-in.js":256,"./en-nz":257,"./en-nz.js":257,"./en-sg":258,"./en-sg.js":258,"./eo":259,"./eo.js":259,"./es":260,"./es-do":261,"./es-do.js":261,"./es-mx":262,"./es-mx.js":262,"./es-us":263,"./es-us.js":263,"./es.js":260,"./et":264,"./et.js":264,"./eu":265,"./eu.js":265,"./fa":266,"./fa.js":266,"./fi":267,"./fi.js":267,"./fil":268,"./fil.js":268,"./fo":269,"./fo.js":269,"./fr":270,"./fr-ca":271,"./fr-ca.js":271,"./fr-ch":272,"./fr-ch.js":272,"./fr.js":270,"./fy":273,"./fy.js":273,"./ga":274,"./ga.js":274,"./gd":275,"./gd.js":275,"./gl":276,"./gl.js":276,"./gom-deva":277,"./gom-deva.js":277,"./gom-latn":278,"./gom-latn.js":278,"./gu":279,"./gu.js":279,"./he":280,"./he.js":280,"./hi":281,"./hi.js":281,"./hr":282,"./hr.js":282,"./hu":283,"./hu.js":283,"./hy-am":284,"./hy-am.js":284,"./id":285,"./id.js":285,"./is":286,"./is.js":286,"./it":287,"./it-ch":288,"./it-ch.js":288,"./it.js":287,"./ja":289,"./ja.js":289,"./jv":290,"./jv.js":290,"./ka":291,"./ka.js":291,"./kk":292,"./kk.js":292,"./km":293,"./km.js":293,"./kn":294,"./kn.js":294,"./ko":295,"./ko.js":295,"./ku":296,"./ku.js":296,"./ky":297,"./ky.js":297,"./lb":298,"./lb.js":298,"./lo":299,"./lo.js":299,"./lt":300,"./lt.js":300,"./lv":301,"./lv.js":301,"./me":302,"./me.js":302,"./mi":303,"./mi.js":303,"./mk":304,"./mk.js":304,"./ml":305,"./ml.js":305,"./mn":306,"./mn.js":306,"./mr":307,"./mr.js":307,"./ms":308,"./ms-my":309,"./ms-my.js":309,"./ms.js":308,"./mt":310,"./mt.js":310,"./my":311,"./my.js":311,"./nb":312,"./nb.js":312,"./ne":313,"./ne.js":313,"./nl":314,"./nl-be":315,"./nl-be.js":315,"./nl.js":314,"./nn":316,"./nn.js":316,"./oc-lnc":317,"./oc-lnc.js":317,"./pa-in":318,"./pa-in.js":318,"./pl":319,"./pl.js":319,"./pt":320,"./pt-br":321,"./pt-br.js":321,"./pt.js":320,"./ro":322,"./ro.js":322,"./ru":323,"./ru.js":323,"./sd":324,"./sd.js":324,"./se":325,"./se.js":325,"./si":326,"./si.js":326,"./sk":327,"./sk.js":327,"./sl":328,"./sl.js":328,"./sq":329,"./sq.js":329,"./sr":330,"./sr-cyrl":331,"./sr-cyrl.js":331,"./sr.js":330,"./ss":332,"./ss.js":332,"./sv":333,"./sv.js":333,"./sw":334,"./sw.js":334,"./ta":335,"./ta.js":335,"./te":336,"./te.js":336,"./tet":337,"./tet.js":337,"./tg":338,"./tg.js":338,"./th":339,"./th.js":339,"./tk":340,"./tk.js":340,"./tl-ph":341,"./tl-ph.js":341,"./tlh":342,"./tlh.js":342,"./tr":343,"./tr.js":343,"./tzl":344,"./tzl.js":344,"./tzm":345,"./tzm-latn":346,"./tzm-latn.js":346,"./tzm.js":345,"./ug-cn":347,"./ug-cn.js":347,"./uk":348,"./uk.js":348,"./ur":349,"./ur.js":349,"./uz":350,"./uz-latn":351,"./uz-latn.js":351,"./uz.js":350,"./vi":352,"./vi.js":352,"./x-pseudo":353,"./x-pseudo.js":353,"./yo":354,"./yo.js":354,"./zh-cn":355,"./zh-cn.js":355,"./zh-hk":356,"./zh-hk.js":356,"./zh-mo":357,"./zh-mo.js":357,"./zh-tw":358,"./zh-tw.js":358};function o(e){var t=a(e);return n(t)}function a(e){if(!n.o(r,e)){var t=new Error("Cannot find module '"+e+"'");throw t.code="MODULE_NOT_FOUND",t}return r[e]}o.keys=function(){return Object.keys(r)},o.resolve=a,e.exports=o,o.id=386},409:function(e,t,n){},410:function(e,t,n){"use strict";n.r(t);n(384);var r,o=n(0),a=n(360),s=n(447),i=n(455),l=n(449),u=n(457),c=n(450),f=n(451),d=n(448),p=n(365),h=n(456),m=n(86),j=n.n(m),b=n(361),y=n(58),g=Object(b.a)(Object(y.b)({palette:{primary:{50:"#e6e6ea",100:"#c1c1cb",200:"#9897a9",300:"#6f6d86",400:"#504e6c",500:"#312f52",600:"#2c2a4b",700:"#252341",800:"#1f1d38",900:"#131228",A100:"#7269ff",A200:"#4236ff",A400:"#1103ff",A700:"#0d00e9",main:"#212121",contrastDefaultColor:"light"},secondary:{50:"#fdebe4",100:"#fbcebd",200:"#f8ad91",300:"#f58c64",400:"#f37343",500:"#f15a22",600:"#ef521e",700:"#ed4819",800:"#eb3f14",900:"#e72e0c",A100:"#ffffff",A200:"#ffe2de",A400:"#ffb5ab",A700:"#ff9f91",main:"#f15a22",contrastDefaultColor:"dark"}},overrides:{MuiRadio:{root:{padding:2}}},typography:{fontSize:13,fontFamily:"Muli"}})),v=n(460),w=n(362),k=n(49),E=n(44),S=n(56),z=n(81),O=n(85),x=n(368),P=n(461),T=function(e,t,n,r){return new(n||(n=Promise))((function(o,a){function s(e){try{l(r.next(e))}catch(e){a(e)}}function i(e){try{l(r.throw(e))}catch(e){a(e)}}function l(e){var t;e.done?o(e.value):(t=e.value,t instanceof n?t:new n((function(e){e(t)}))).then(s,i)}l((r=r.apply(e,t||[])).next())}))},C=function(e,t){var n,r,o,a,s={label:0,sent:function(){if(1&o[0])throw o[1];return o[1]},trys:[],ops:[]};return a={next:i(0),throw:i(1),return:i(2)},"function"==typeof Symbol&&(a[Symbol.iterator]=function(){return this}),a;function i(a){return function(i){return function(a){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,r&&(o=2&a[0]?r.return:a[0]?r.throw||((o=r.return)&&o.call(r),0):r.next)&&!(o=o.call(r,a[1])).done)return o;switch(r=0,o&&(a=[2&a[0],o.value]),a[0]){case 0:case 1:o=a;break;case 4:return s.label++,{value:a[1],done:!1};case 5:s.label++,r=a[1],a=[0];continue;case 7:a=s.ops.pop(),s.trys.pop();continue;default:if(!(o=s.trys,(o=o.length>0&&o[o.length-1])||6!==a[0]&&2!==a[0])){s=0;continue}if(3===a[0]&&(!o||a[1]>o[0]&&a[1]<o[3])){s.label=a[1];break}if(6===a[0]&&s.label<o[1]){s.label=o[1],o=a;break}if(o&&s.label<o[2]){s.label=o[2],s.ops.push(a);break}o[2]&&s.ops.pop(),s.trys.pop();continue}a=t.call(e,s)}catch(e){a=[6,e],r=0}finally{n=o=0}if(5&a[0])throw a[1];return{value:a[0]?a[1]:void 0,done:!0}}([a,i])}}},L=function(e,t){var n="function"==typeof Symbol&&e[Symbol.iterator];if(!n)return e;var r,o,a=n.call(e),s=[];try{for(;(void 0===t||t-- >0)&&!(r=a.next()).done;)s.push(r.value)}catch(e){o={error:e}}finally{try{r&&!r.done&&(n=a.return)&&n.call(a)}finally{if(o)throw o.error}}return s},_=Object(a.a)(((r={root:{color:"#fff"},appContainer:{backgroundColor:"#eee",overflowY:"auto"}})[g.breakpoints.up("md")]={maxWidth:"80%"},r["@global"]={body:{fontFamily:g.typography.fontFamily}},r));E.b.onStart({},(function(e){return T(void 0,void 0,void 0,(function(){var t,n,r,o,a,s;return C(this,(function(i){switch(i.label){case 0:return t=e.to(),n=null===(a=t.data)||void 0===a?void 0:a.loggedIn,r=null===(s=t.data)||void 0===s?void 0:s.loggedOut,n||r?[4,z.a.current()]:[3,2];case 1:if((o=i.sent())&&r)return[2,E.a.target("files",{},{location:"replace"})];if(!o&&n)return[2,E.a.target("login",{},{location:"replace"})];i.label=2;case 2:return[2]}}))}))})),E.b.onBefore({},(function(){S.a.toggleLoading(!0)})),E.b.onSuccess({},(function(){S.a.toggleLoading(!1)})),E.b.onError({},(function(){S.a.toggleLoading(!1)}));var F=n(16),N=n.n(F),A=n(106),D=n(52),I=n(143);Object(I.b)(),N.a.render(o.createElement(A.a,{store:D.b,children:o.createElement((function(){var e=this,t=L(o.useState(null),2),n=t[0],r=t[1],a=_({}),m=Object(z.b)(),b=function(){r(null)},y=[{label:"Files",sref:"files"},{label:"Shared With Me",sref:"sharedWithMeFiles"},{label:"Reviewed Files",sref:"reviewFiles"}];return o.createElement(v.a,{utils:w.a},o.createElement(x.CrudProvider,{crud:S.a},o.createElement(k.a,{router:E.c},o.createElement(s.a,{theme:g},o.createElement(i.a,{container:!0,wrap:"nowrap"},o.createElement(i.a,{item:!0,xs:!0,container:!0,direction:"column"},m&&o.createElement(l.a,{elevation:1,className:j()(a.root),position:"static"},o.createElement(u.a,{className:"pl-0"},o.createElement(i.a,{item:!0,xs:!0,className:"pl-3"},o.createElement(c.a,{variant:"h6"},"PDF Signed App")),o.createElement(i.a,null,o.createElement(i.a,{container:!0,className:"desktop-menu p-1 p-1-all"},y.map((function(e,t){return o.createElement(i.a,{key:t},o.createElement(k.d,{to:e.sref},o.createElement(f.a,{size:"small",color:"inherit",className:"link-button"},e.label)))})),o.createElement(i.a,null,o.createElement(f.a,{size:"small",color:"inherit",className:"link-button",onClick:function(){return T(e,void 0,void 0,(function(){return C(this,(function(e){switch(e.label){case 0:return[4,z.a.logout()];case 1:return e.sent(),E.a.go("login"),[2]}}))}))}},"Logout"))),o.createElement(i.a,{className:"mobile-menu"},o.createElement(d.a,{onClick:function(e){return r(e.currentTarget)},color:"inherit"},o.createElement(P.a,null)),o.createElement(p.a,{anchorEl:n,open:Boolean(n),onClose:b},y.map((function(e,t){return o.createElement(k.d,{to:e.sref},o.createElement(h.a,{onClick:b},e.label))})),o.createElement(h.a,{onClick:function(){return T(e,void 0,void 0,(function(){return C(this,(function(e){switch(e.label){case 0:return[4,z.a.logout()];case 1:return e.sent(),E.a.go("login"),[2]}}))}))}},"Logout")))))),o.createElement(i.a,{item:!0,xs:!0,container:!0,direction:"column",className:j()(a.appContainer)},o.createElement(k.e,null))),o.createElement(O.ProgressIndicator,null),o.createElement(O.NotifySnackbar,{autoHideDuration:5e3}),o.createElement(O.AlertDialog,null),o.createElement(O.ConfirmDialog,null))))))}))}),document.querySelector("#app"))},44:function(e,t,n){"use strict";n.d(t,"c",(function(){return o})),n.d(t,"a",(function(){return a})),n.d(t,"b",(function(){return s}));var r=n(49),o=new r.c;[{url:"/",name:"login.**",lazyLoad:function(){return n.e(11).then(n.bind(null,428))}},{url:"/register",name:"signupUser.**",lazyLoad:function(){return Promise.all([n.e(0),n.e(9)]).then(n.bind(null,436))}},{url:"/dashboard",name:"dashboard.**",lazyLoad:function(){return n.e(10).then(n.bind(null,429))}},{url:"/files",name:"files.**",lazyLoad:function(){return n.e(5).then(n.bind(null,435))}},{url:"/shared-with-me-files",name:"sharedWithMeFiles.**",lazyLoad:function(){return n.e(7).then(n.bind(null,430))}},{url:"/shared-files",name:"sharedFiles.**",lazyLoad:function(){return n.e(14).then(n.bind(null,431))}},{url:"/file-viewer?:fileId",name:"fileViewer.**",lazyLoad:function(){return Promise.all([n.e(0),n.e(4),n.e(12)]).then(n.bind(null,434))}},{url:"/signed-files",name:"SignedDocument.**",lazyLoad:function(){return n.e(8).then(n.bind(null,432))}},{url:"/review-file-viewer?:fileId",name:"reviewFileViewer.**",lazyLoad:function(){return Promise.all([n.e(13),n.e(15)]).then(n.bind(null,437))}},{url:"/reviewed-files",name:"reviewFiles.**",lazyLoad:function(){return n.e(6).then(n.bind(null,433))}}].forEach((function(e){return o.stateRegistry.register(e)})),o.urlRouter.otherwise("/"),o.plugin(r.f),o.plugin(r.g);var a=o.stateService,s=o.transitionService},52:function(e,t,n){"use strict";n.d(t,"b",(function(){return s})),n.d(t,"a",(function(){return i}));var r=n(369),o=function(){return(o=Object.assign||function(e){for(var t,n=1,r=arguments.length;n<r;n++)for(var o in t=arguments[n])Object.prototype.hasOwnProperty.call(t,o)&&(e[o]=t[o]);return e}).apply(this,arguments)},a={user:null,active_state:null},s=Object(r.a)((function(e,t){switch(void 0===e&&(e=a),t.type){case i:return o(o({},e),{user:t.user});case l:return o(o({},e),{active_state:t.active_state});default:return e}})),i=Symbol("SET_USER"),l=Symbol("SET_ACTIVE_STATE")},56:function(e,t,n){"use strict";n.d(t,"a",(function(){return c}));var r,o=n(363),a=n(364),s=(r=function(e,t){return(r=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(e,t){e.__proto__=t}||function(e,t){for(var n in t)t.hasOwnProperty(n)&&(e[n]=t[n])})(e,t)},function(e,t){function n(){this.constructor=e}r(e,t),e.prototype=null===t?Object.create(t):(n.prototype=t.prototype,new n)}),i=function(){return(i=Object.assign||function(e){for(var t,n=1,r=arguments.length;n<r;n++)for(var o in t=arguments[n])Object.prototype.hasOwnProperty.call(t,o)&&(e[o]=t[o]);return e}).apply(this,arguments)},l=function(e,t,n,r){return new(n||(n=Promise))((function(o,a){function s(e){try{l(r.next(e))}catch(e){a(e)}}function i(e){try{l(r.throw(e))}catch(e){a(e)}}function l(e){var t;e.done?o(e.value):(t=e.value,t instanceof n?t:new n((function(e){e(t)}))).then(s,i)}l((r=r.apply(e,t||[])).next())}))},u=function(e,t){var n,r,o,a,s={label:0,sent:function(){if(1&o[0])throw o[1];return o[1]},trys:[],ops:[]};return a={next:i(0),throw:i(1),return:i(2)},"function"==typeof Symbol&&(a[Symbol.iterator]=function(){return this}),a;function i(a){return function(i){return function(a){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,r&&(o=2&a[0]?r.return:a[0]?r.throw||((o=r.return)&&o.call(r),0):r.next)&&!(o=o.call(r,a[1])).done)return o;switch(r=0,o&&(a=[2&a[0],o.value]),a[0]){case 0:case 1:o=a;break;case 4:return s.label++,{value:a[1],done:!1};case 5:s.label++,r=a[1],a=[0];continue;case 7:a=s.ops.pop(),s.trys.pop();continue;default:if(!(o=s.trys,(o=o.length>0&&o[o.length-1])||6!==a[0]&&2!==a[0])){s=0;continue}if(3===a[0]&&(!o||a[1]>o[0]&&a[1]<o[3])){s.label=a[1];break}if(6===a[0]&&s.label<o[1]){s.label=o[1],o=a;break}if(o&&s.label<o[2]){s.label=o[2],s.ops.push(a);break}o[2]&&s.ops.pop(),s.trys.pop();continue}a=t.call(e,s)}catch(e){a=[6,e],r=0}finally{n=o=0}if(5&a[0])throw a[1];return{value:a[0]?a[1]:void 0,done:!0}}([a,i])}}},c=new(function(e){function t(){var t=null!==e&&e.apply(this,arguments)||this;return t.baseUrl="https://pdf-app.onrender.com/",t.getUrl=function(){for(var e=[],n=0;n<arguments.length;n++)e[n]=arguments[n];return e.reduce((function(e,t){return e+t}),t.baseUrl)},t}return s(t,e),t.prototype.get=function(e,t,n){return void 0===t&&(t={}),void 0===n&&(n={}),l(this,void 0,Promise,(function(){return u(this,(function(r){return[2,this.send(i({method:"GET",url:e,data:t},n))]}))}))},t.prototype.post=function(e,t,n){return void 0===t&&(t={}),void 0===n&&(n={}),l(this,void 0,Promise,(function(){return u(this,(function(r){return[2,this.send(i({method:"POST",url:e,data:t},n))]}))}))},t.prototype.put=function(e,t,n){return void 0===t&&(t={}),void 0===n&&(n={}),l(this,void 0,Promise,(function(){return u(this,(function(r){return[2,this.send(i({method:"PUT",url:e,data:t},n))]}))}))},t.prototype.delete=function(e,t,n){return void 0===t&&(t={}),void 0===n&&(n={}),l(this,void 0,Promise,(function(){return u(this,(function(r){return[2,this.send(i({method:"DELETE",url:e,data:t},n))]}))}))},t.prototype.send=function(e){return void 0===e&&(e={}),l(this,void 0,Promise,(function(){var t,n,r,o,a,s,l,c,f,d,p,h;return u(this,(function(u){switch(u.label){case 0:t=e.url,n=e.data,r=e.method,o=e.notify,void 0===o||o,(a=i(i({},e.ajaxOptions),{method:r})).headers=i(i({},a.headers),{Accept:"application/json",Authorization:localStorage.getItem("login_token")}),n instanceof FormData||(a.headers["Content-Type"]="application/json"),s=this.getUrl(t),"GET"===a.method?(l=new URLSearchParams(JSON.parse(JSON.stringify(n))),s+="?"+l):n instanceof FormData?a.body=n:a.body=JSON.stringify(n),c={data:[],message:"",type:"error",status:null},u.label=1;case 1:return u.trys.push([1,8,,9]),[4,fetch(s,a)];case 2:return 200!==(f=u.sent()).status?[3,4]:[4,f.json()];case 3:return c=u.sent(),d=c.status,p=c.message,void 0===p?"We're facing some technical issue. Please try again after some time":p,200===d,[3,7];case 4:return u.trys.push([4,,6,7]),[4,f.json()];case 5:return c=u.sent(),[3,7];case 6:throw{message:c.message,status:f.status};case 7:return[3,9];case 8:throw h=u.sent(),console.error(h),this.notify({message:h.message,type:"error"}),h;case 9:if(200!==c.status)throw c;return[2,c]}}))}))},t}(o.CrudRequest));c.config(a.chooseFile)},81:function(e,t,n){"use strict";n.d(t,"a",(function(){return l})),n.d(t,"b",(function(){return u}));var r=n(56),o=n(106),a=n(52),s=function(e,t,n,r){return new(n||(n=Promise))((function(o,a){function s(e){try{l(r.next(e))}catch(e){a(e)}}function i(e){try{l(r.throw(e))}catch(e){a(e)}}function l(e){var t;e.done?o(e.value):(t=e.value,t instanceof n?t:new n((function(e){e(t)}))).then(s,i)}l((r=r.apply(e,t||[])).next())}))},i=function(e,t){var n,r,o,a,s={label:0,sent:function(){if(1&o[0])throw o[1];return o[1]},trys:[],ops:[]};return a={next:i(0),throw:i(1),return:i(2)},"function"==typeof Symbol&&(a[Symbol.iterator]=function(){return this}),a;function i(a){return function(i){return function(a){if(n)throw new TypeError("Generator is already executing.");for(;s;)try{if(n=1,r&&(o=2&a[0]?r.return:a[0]?r.throw||((o=r.return)&&o.call(r),0):r.next)&&!(o=o.call(r,a[1])).done)return o;switch(r=0,o&&(a=[2&a[0],o.value]),a[0]){case 0:case 1:o=a;break;case 4:return s.label++,{value:a[1],done:!1};case 5:s.label++,r=a[1],a=[0];continue;case 7:a=s.ops.pop(),s.trys.pop();continue;default:if(!(o=s.trys,(o=o.length>0&&o[o.length-1])||6!==a[0]&&2!==a[0])){s=0;continue}if(3===a[0]&&(!o||a[1]>o[0]&&a[1]<o[3])){s.label=a[1];break}if(6===a[0]&&s.label<o[1]){s.label=o[1],o=a;break}if(o&&s.label<o[2]){s.label=o[2],s.ops.push(a);break}o[2]&&s.ops.pop(),s.trys.pop();continue}a=t.call(e,s)}catch(e){a=[6,e],r=0}finally{n=o=0}if(5&a[0])throw a[1];return{value:a[0]?a[1]:void 0,done:!0}}([a,i])}}},l=new(function(){function e(){var e=this.get();a.b.dispatch({type:a.a,user:e})}return e.prototype.login=function(e){return s(this,void 0,void 0,(function(){var t;return i(this,(function(n){switch(n.label){case 0:return[4,r.a.post("user/login",e)];case 1:return t=n.sent().data,this.set(t),[2]}}))}))},e.prototype.logout=function(){return s(this,void 0,void 0,(function(){return i(this,(function(e){return this.removeToken(),this.remove(),[2]}))}))},e.prototype.current=function(){return s(this,void 0,Promise,(function(){return i(this,(function(e){return[2,this.get()]}))}))},e.prototype.rememberCredentials=function(e){localStorage.setItem("cred",btoa(JSON.stringify(e)))},e.prototype.forgetCredentials=function(){localStorage.removeItem("cred")},e.prototype.getRememberedCredentials=function(){try{return JSON.parse(atob(localStorage.getItem("cred")))}catch(e){return null}},e.prototype.set=function(e){localStorage.setItem("user",btoa(JSON.stringify(e))),a.b.dispatch({type:a.a,user:e}),this.setToken(e.token)},e.prototype.get=function(){try{return JSON.parse(atob(localStorage.getItem("user")))}catch(e){return console.warn(e),null}},e.prototype.setToken=function(e){localStorage.setItem("login_token",e)},e.prototype.removeToken=function(){localStorage.removeItem("login_token")},e.prototype.getToken=function(){return localStorage.getItem("login_token")},e.prototype.remove=function(){localStorage.removeItem("user"),a.b.dispatch({type:a.a,user:null})},e}());function u(){return Object(o.b)((function(e){return e.user}))}}},[[383,2,3]]]);
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["main"],{
+
+/***/ "./src/index.scss":
+/*!************************!*\
+  !*** ./src/index.scss ***!
+  \************************/
+/***/ (() => {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./node_modules/moment/locale sync recursive ^\\.\\/.*$":
+/*!***************************************************!*\
+  !*** ./node_modules/moment/locale/ sync ^\.\/.*$ ***!
+  \***************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var map = {
+	"./af": "./node_modules/moment/locale/af.js",
+	"./af.js": "./node_modules/moment/locale/af.js",
+	"./ar": "./node_modules/moment/locale/ar.js",
+	"./ar-dz": "./node_modules/moment/locale/ar-dz.js",
+	"./ar-dz.js": "./node_modules/moment/locale/ar-dz.js",
+	"./ar-kw": "./node_modules/moment/locale/ar-kw.js",
+	"./ar-kw.js": "./node_modules/moment/locale/ar-kw.js",
+	"./ar-ly": "./node_modules/moment/locale/ar-ly.js",
+	"./ar-ly.js": "./node_modules/moment/locale/ar-ly.js",
+	"./ar-ma": "./node_modules/moment/locale/ar-ma.js",
+	"./ar-ma.js": "./node_modules/moment/locale/ar-ma.js",
+	"./ar-sa": "./node_modules/moment/locale/ar-sa.js",
+	"./ar-sa.js": "./node_modules/moment/locale/ar-sa.js",
+	"./ar-tn": "./node_modules/moment/locale/ar-tn.js",
+	"./ar-tn.js": "./node_modules/moment/locale/ar-tn.js",
+	"./ar.js": "./node_modules/moment/locale/ar.js",
+	"./az": "./node_modules/moment/locale/az.js",
+	"./az.js": "./node_modules/moment/locale/az.js",
+	"./be": "./node_modules/moment/locale/be.js",
+	"./be.js": "./node_modules/moment/locale/be.js",
+	"./bg": "./node_modules/moment/locale/bg.js",
+	"./bg.js": "./node_modules/moment/locale/bg.js",
+	"./bm": "./node_modules/moment/locale/bm.js",
+	"./bm.js": "./node_modules/moment/locale/bm.js",
+	"./bn": "./node_modules/moment/locale/bn.js",
+	"./bn-bd": "./node_modules/moment/locale/bn-bd.js",
+	"./bn-bd.js": "./node_modules/moment/locale/bn-bd.js",
+	"./bn.js": "./node_modules/moment/locale/bn.js",
+	"./bo": "./node_modules/moment/locale/bo.js",
+	"./bo.js": "./node_modules/moment/locale/bo.js",
+	"./br": "./node_modules/moment/locale/br.js",
+	"./br.js": "./node_modules/moment/locale/br.js",
+	"./bs": "./node_modules/moment/locale/bs.js",
+	"./bs.js": "./node_modules/moment/locale/bs.js",
+	"./ca": "./node_modules/moment/locale/ca.js",
+	"./ca.js": "./node_modules/moment/locale/ca.js",
+	"./cs": "./node_modules/moment/locale/cs.js",
+	"./cs.js": "./node_modules/moment/locale/cs.js",
+	"./cv": "./node_modules/moment/locale/cv.js",
+	"./cv.js": "./node_modules/moment/locale/cv.js",
+	"./cy": "./node_modules/moment/locale/cy.js",
+	"./cy.js": "./node_modules/moment/locale/cy.js",
+	"./da": "./node_modules/moment/locale/da.js",
+	"./da.js": "./node_modules/moment/locale/da.js",
+	"./de": "./node_modules/moment/locale/de.js",
+	"./de-at": "./node_modules/moment/locale/de-at.js",
+	"./de-at.js": "./node_modules/moment/locale/de-at.js",
+	"./de-ch": "./node_modules/moment/locale/de-ch.js",
+	"./de-ch.js": "./node_modules/moment/locale/de-ch.js",
+	"./de.js": "./node_modules/moment/locale/de.js",
+	"./dv": "./node_modules/moment/locale/dv.js",
+	"./dv.js": "./node_modules/moment/locale/dv.js",
+	"./el": "./node_modules/moment/locale/el.js",
+	"./el.js": "./node_modules/moment/locale/el.js",
+	"./en-au": "./node_modules/moment/locale/en-au.js",
+	"./en-au.js": "./node_modules/moment/locale/en-au.js",
+	"./en-ca": "./node_modules/moment/locale/en-ca.js",
+	"./en-ca.js": "./node_modules/moment/locale/en-ca.js",
+	"./en-gb": "./node_modules/moment/locale/en-gb.js",
+	"./en-gb.js": "./node_modules/moment/locale/en-gb.js",
+	"./en-ie": "./node_modules/moment/locale/en-ie.js",
+	"./en-ie.js": "./node_modules/moment/locale/en-ie.js",
+	"./en-il": "./node_modules/moment/locale/en-il.js",
+	"./en-il.js": "./node_modules/moment/locale/en-il.js",
+	"./en-in": "./node_modules/moment/locale/en-in.js",
+	"./en-in.js": "./node_modules/moment/locale/en-in.js",
+	"./en-nz": "./node_modules/moment/locale/en-nz.js",
+	"./en-nz.js": "./node_modules/moment/locale/en-nz.js",
+	"./en-sg": "./node_modules/moment/locale/en-sg.js",
+	"./en-sg.js": "./node_modules/moment/locale/en-sg.js",
+	"./eo": "./node_modules/moment/locale/eo.js",
+	"./eo.js": "./node_modules/moment/locale/eo.js",
+	"./es": "./node_modules/moment/locale/es.js",
+	"./es-do": "./node_modules/moment/locale/es-do.js",
+	"./es-do.js": "./node_modules/moment/locale/es-do.js",
+	"./es-mx": "./node_modules/moment/locale/es-mx.js",
+	"./es-mx.js": "./node_modules/moment/locale/es-mx.js",
+	"./es-us": "./node_modules/moment/locale/es-us.js",
+	"./es-us.js": "./node_modules/moment/locale/es-us.js",
+	"./es.js": "./node_modules/moment/locale/es.js",
+	"./et": "./node_modules/moment/locale/et.js",
+	"./et.js": "./node_modules/moment/locale/et.js",
+	"./eu": "./node_modules/moment/locale/eu.js",
+	"./eu.js": "./node_modules/moment/locale/eu.js",
+	"./fa": "./node_modules/moment/locale/fa.js",
+	"./fa.js": "./node_modules/moment/locale/fa.js",
+	"./fi": "./node_modules/moment/locale/fi.js",
+	"./fi.js": "./node_modules/moment/locale/fi.js",
+	"./fil": "./node_modules/moment/locale/fil.js",
+	"./fil.js": "./node_modules/moment/locale/fil.js",
+	"./fo": "./node_modules/moment/locale/fo.js",
+	"./fo.js": "./node_modules/moment/locale/fo.js",
+	"./fr": "./node_modules/moment/locale/fr.js",
+	"./fr-ca": "./node_modules/moment/locale/fr-ca.js",
+	"./fr-ca.js": "./node_modules/moment/locale/fr-ca.js",
+	"./fr-ch": "./node_modules/moment/locale/fr-ch.js",
+	"./fr-ch.js": "./node_modules/moment/locale/fr-ch.js",
+	"./fr.js": "./node_modules/moment/locale/fr.js",
+	"./fy": "./node_modules/moment/locale/fy.js",
+	"./fy.js": "./node_modules/moment/locale/fy.js",
+	"./ga": "./node_modules/moment/locale/ga.js",
+	"./ga.js": "./node_modules/moment/locale/ga.js",
+	"./gd": "./node_modules/moment/locale/gd.js",
+	"./gd.js": "./node_modules/moment/locale/gd.js",
+	"./gl": "./node_modules/moment/locale/gl.js",
+	"./gl.js": "./node_modules/moment/locale/gl.js",
+	"./gom-deva": "./node_modules/moment/locale/gom-deva.js",
+	"./gom-deva.js": "./node_modules/moment/locale/gom-deva.js",
+	"./gom-latn": "./node_modules/moment/locale/gom-latn.js",
+	"./gom-latn.js": "./node_modules/moment/locale/gom-latn.js",
+	"./gu": "./node_modules/moment/locale/gu.js",
+	"./gu.js": "./node_modules/moment/locale/gu.js",
+	"./he": "./node_modules/moment/locale/he.js",
+	"./he.js": "./node_modules/moment/locale/he.js",
+	"./hi": "./node_modules/moment/locale/hi.js",
+	"./hi.js": "./node_modules/moment/locale/hi.js",
+	"./hr": "./node_modules/moment/locale/hr.js",
+	"./hr.js": "./node_modules/moment/locale/hr.js",
+	"./hu": "./node_modules/moment/locale/hu.js",
+	"./hu.js": "./node_modules/moment/locale/hu.js",
+	"./hy-am": "./node_modules/moment/locale/hy-am.js",
+	"./hy-am.js": "./node_modules/moment/locale/hy-am.js",
+	"./id": "./node_modules/moment/locale/id.js",
+	"./id.js": "./node_modules/moment/locale/id.js",
+	"./is": "./node_modules/moment/locale/is.js",
+	"./is.js": "./node_modules/moment/locale/is.js",
+	"./it": "./node_modules/moment/locale/it.js",
+	"./it-ch": "./node_modules/moment/locale/it-ch.js",
+	"./it-ch.js": "./node_modules/moment/locale/it-ch.js",
+	"./it.js": "./node_modules/moment/locale/it.js",
+	"./ja": "./node_modules/moment/locale/ja.js",
+	"./ja.js": "./node_modules/moment/locale/ja.js",
+	"./jv": "./node_modules/moment/locale/jv.js",
+	"./jv.js": "./node_modules/moment/locale/jv.js",
+	"./ka": "./node_modules/moment/locale/ka.js",
+	"./ka.js": "./node_modules/moment/locale/ka.js",
+	"./kk": "./node_modules/moment/locale/kk.js",
+	"./kk.js": "./node_modules/moment/locale/kk.js",
+	"./km": "./node_modules/moment/locale/km.js",
+	"./km.js": "./node_modules/moment/locale/km.js",
+	"./kn": "./node_modules/moment/locale/kn.js",
+	"./kn.js": "./node_modules/moment/locale/kn.js",
+	"./ko": "./node_modules/moment/locale/ko.js",
+	"./ko.js": "./node_modules/moment/locale/ko.js",
+	"./ku": "./node_modules/moment/locale/ku.js",
+	"./ku.js": "./node_modules/moment/locale/ku.js",
+	"./ky": "./node_modules/moment/locale/ky.js",
+	"./ky.js": "./node_modules/moment/locale/ky.js",
+	"./lb": "./node_modules/moment/locale/lb.js",
+	"./lb.js": "./node_modules/moment/locale/lb.js",
+	"./lo": "./node_modules/moment/locale/lo.js",
+	"./lo.js": "./node_modules/moment/locale/lo.js",
+	"./lt": "./node_modules/moment/locale/lt.js",
+	"./lt.js": "./node_modules/moment/locale/lt.js",
+	"./lv": "./node_modules/moment/locale/lv.js",
+	"./lv.js": "./node_modules/moment/locale/lv.js",
+	"./me": "./node_modules/moment/locale/me.js",
+	"./me.js": "./node_modules/moment/locale/me.js",
+	"./mi": "./node_modules/moment/locale/mi.js",
+	"./mi.js": "./node_modules/moment/locale/mi.js",
+	"./mk": "./node_modules/moment/locale/mk.js",
+	"./mk.js": "./node_modules/moment/locale/mk.js",
+	"./ml": "./node_modules/moment/locale/ml.js",
+	"./ml.js": "./node_modules/moment/locale/ml.js",
+	"./mn": "./node_modules/moment/locale/mn.js",
+	"./mn.js": "./node_modules/moment/locale/mn.js",
+	"./mr": "./node_modules/moment/locale/mr.js",
+	"./mr.js": "./node_modules/moment/locale/mr.js",
+	"./ms": "./node_modules/moment/locale/ms.js",
+	"./ms-my": "./node_modules/moment/locale/ms-my.js",
+	"./ms-my.js": "./node_modules/moment/locale/ms-my.js",
+	"./ms.js": "./node_modules/moment/locale/ms.js",
+	"./mt": "./node_modules/moment/locale/mt.js",
+	"./mt.js": "./node_modules/moment/locale/mt.js",
+	"./my": "./node_modules/moment/locale/my.js",
+	"./my.js": "./node_modules/moment/locale/my.js",
+	"./nb": "./node_modules/moment/locale/nb.js",
+	"./nb.js": "./node_modules/moment/locale/nb.js",
+	"./ne": "./node_modules/moment/locale/ne.js",
+	"./ne.js": "./node_modules/moment/locale/ne.js",
+	"./nl": "./node_modules/moment/locale/nl.js",
+	"./nl-be": "./node_modules/moment/locale/nl-be.js",
+	"./nl-be.js": "./node_modules/moment/locale/nl-be.js",
+	"./nl.js": "./node_modules/moment/locale/nl.js",
+	"./nn": "./node_modules/moment/locale/nn.js",
+	"./nn.js": "./node_modules/moment/locale/nn.js",
+	"./oc-lnc": "./node_modules/moment/locale/oc-lnc.js",
+	"./oc-lnc.js": "./node_modules/moment/locale/oc-lnc.js",
+	"./pa-in": "./node_modules/moment/locale/pa-in.js",
+	"./pa-in.js": "./node_modules/moment/locale/pa-in.js",
+	"./pl": "./node_modules/moment/locale/pl.js",
+	"./pl.js": "./node_modules/moment/locale/pl.js",
+	"./pt": "./node_modules/moment/locale/pt.js",
+	"./pt-br": "./node_modules/moment/locale/pt-br.js",
+	"./pt-br.js": "./node_modules/moment/locale/pt-br.js",
+	"./pt.js": "./node_modules/moment/locale/pt.js",
+	"./ro": "./node_modules/moment/locale/ro.js",
+	"./ro.js": "./node_modules/moment/locale/ro.js",
+	"./ru": "./node_modules/moment/locale/ru.js",
+	"./ru.js": "./node_modules/moment/locale/ru.js",
+	"./sd": "./node_modules/moment/locale/sd.js",
+	"./sd.js": "./node_modules/moment/locale/sd.js",
+	"./se": "./node_modules/moment/locale/se.js",
+	"./se.js": "./node_modules/moment/locale/se.js",
+	"./si": "./node_modules/moment/locale/si.js",
+	"./si.js": "./node_modules/moment/locale/si.js",
+	"./sk": "./node_modules/moment/locale/sk.js",
+	"./sk.js": "./node_modules/moment/locale/sk.js",
+	"./sl": "./node_modules/moment/locale/sl.js",
+	"./sl.js": "./node_modules/moment/locale/sl.js",
+	"./sq": "./node_modules/moment/locale/sq.js",
+	"./sq.js": "./node_modules/moment/locale/sq.js",
+	"./sr": "./node_modules/moment/locale/sr.js",
+	"./sr-cyrl": "./node_modules/moment/locale/sr-cyrl.js",
+	"./sr-cyrl.js": "./node_modules/moment/locale/sr-cyrl.js",
+	"./sr.js": "./node_modules/moment/locale/sr.js",
+	"./ss": "./node_modules/moment/locale/ss.js",
+	"./ss.js": "./node_modules/moment/locale/ss.js",
+	"./sv": "./node_modules/moment/locale/sv.js",
+	"./sv.js": "./node_modules/moment/locale/sv.js",
+	"./sw": "./node_modules/moment/locale/sw.js",
+	"./sw.js": "./node_modules/moment/locale/sw.js",
+	"./ta": "./node_modules/moment/locale/ta.js",
+	"./ta.js": "./node_modules/moment/locale/ta.js",
+	"./te": "./node_modules/moment/locale/te.js",
+	"./te.js": "./node_modules/moment/locale/te.js",
+	"./tet": "./node_modules/moment/locale/tet.js",
+	"./tet.js": "./node_modules/moment/locale/tet.js",
+	"./tg": "./node_modules/moment/locale/tg.js",
+	"./tg.js": "./node_modules/moment/locale/tg.js",
+	"./th": "./node_modules/moment/locale/th.js",
+	"./th.js": "./node_modules/moment/locale/th.js",
+	"./tk": "./node_modules/moment/locale/tk.js",
+	"./tk.js": "./node_modules/moment/locale/tk.js",
+	"./tl-ph": "./node_modules/moment/locale/tl-ph.js",
+	"./tl-ph.js": "./node_modules/moment/locale/tl-ph.js",
+	"./tlh": "./node_modules/moment/locale/tlh.js",
+	"./tlh.js": "./node_modules/moment/locale/tlh.js",
+	"./tr": "./node_modules/moment/locale/tr.js",
+	"./tr.js": "./node_modules/moment/locale/tr.js",
+	"./tzl": "./node_modules/moment/locale/tzl.js",
+	"./tzl.js": "./node_modules/moment/locale/tzl.js",
+	"./tzm": "./node_modules/moment/locale/tzm.js",
+	"./tzm-latn": "./node_modules/moment/locale/tzm-latn.js",
+	"./tzm-latn.js": "./node_modules/moment/locale/tzm-latn.js",
+	"./tzm.js": "./node_modules/moment/locale/tzm.js",
+	"./ug-cn": "./node_modules/moment/locale/ug-cn.js",
+	"./ug-cn.js": "./node_modules/moment/locale/ug-cn.js",
+	"./uk": "./node_modules/moment/locale/uk.js",
+	"./uk.js": "./node_modules/moment/locale/uk.js",
+	"./ur": "./node_modules/moment/locale/ur.js",
+	"./ur.js": "./node_modules/moment/locale/ur.js",
+	"./uz": "./node_modules/moment/locale/uz.js",
+	"./uz-latn": "./node_modules/moment/locale/uz-latn.js",
+	"./uz-latn.js": "./node_modules/moment/locale/uz-latn.js",
+	"./uz.js": "./node_modules/moment/locale/uz.js",
+	"./vi": "./node_modules/moment/locale/vi.js",
+	"./vi.js": "./node_modules/moment/locale/vi.js",
+	"./x-pseudo": "./node_modules/moment/locale/x-pseudo.js",
+	"./x-pseudo.js": "./node_modules/moment/locale/x-pseudo.js",
+	"./yo": "./node_modules/moment/locale/yo.js",
+	"./yo.js": "./node_modules/moment/locale/yo.js",
+	"./zh-cn": "./node_modules/moment/locale/zh-cn.js",
+	"./zh-cn.js": "./node_modules/moment/locale/zh-cn.js",
+	"./zh-hk": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-hk.js": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-mo": "./node_modules/moment/locale/zh-mo.js",
+	"./zh-mo.js": "./node_modules/moment/locale/zh-mo.js",
+	"./zh-tw": "./node_modules/moment/locale/zh-tw.js",
+	"./zh-tw.js": "./node_modules/moment/locale/zh-tw.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
+
+/***/ }),
+
+/***/ "./src/AppComponent.tsx":
+/*!******************************!*\
+  !*** ./src/AppComponent.tsx ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AppComponent": () => (/* binding */ AppComponent)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/styles/makeStyles.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/styles/esm/ThemeProvider/ThemeProvider.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Grid/Grid.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/AppBar/AppBar.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Toolbar/Toolbar.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Typography/Typography.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Button/Button.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/IconButton/IconButton.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Menu/Menu.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/MenuItem/MenuItem.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./theme */ "./src/theme.ts");
+/* harmony import */ var _material_ui_pickers__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/pickers */ "./node_modules/@material-ui/pickers/esm/useUtils-cfb96ac9.js");
+/* harmony import */ var _date_io_moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @date-io/moment */ "./node_modules/@date-io/moment/build/index.esm.js");
+/* harmony import */ var _uirouter_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @uirouter/react */ "./node_modules/@uirouter/react/lib-esm/index.js");
+/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./router */ "./src/router.ts");
+/* harmony import */ var _factories_CrudFactory__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./factories/CrudFactory */ "./src/factories/CrudFactory.ts");
+/* harmony import */ var _factories_UserFactory__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./factories/UserFactory */ "./src/factories/UserFactory.ts");
+/* harmony import */ var react_material_crud__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-material-crud */ "./node_modules/react-material-crud/index.js");
+/* harmony import */ var _crud_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @crud/react */ "./node_modules/@crud/react/index.js");
+/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! react-feather */ "./node_modules/react-feather/dist/icons/menu.js");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var __read = (undefined && undefined.__read) || function (o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+};
+var _a;
+
+
+
+
+
+
+
+
+
+
+
+
+
+var useStyles = (0,_material_ui_core__WEBPACK_IMPORTED_MODULE_10__["default"])((_a = {
+        root: {
+            color: "#fff",
+        },
+        appContainer: {
+            backgroundColor: "#eee",
+            overflowY: "auto",
+        }
+    },
+    _a[_theme__WEBPACK_IMPORTED_MODULE_2__.theme.breakpoints.up("md")] = {
+        maxWidth: "80%",
+    },
+    _a["@global"] = {
+        body: {
+            fontFamily: _theme__WEBPACK_IMPORTED_MODULE_2__.theme.typography.fontFamily,
+        },
+    },
+    _a));
+_router__WEBPACK_IMPORTED_MODULE_5__.$transition.onStart({}, function (trans) { return __awaiter(void 0, void 0, void 0, function () {
+    var to, loggedIn, loggedOut, user;
+    var _a, _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                to = trans.to();
+                loggedIn = (_a = to.data) === null || _a === void 0 ? void 0 : _a.loggedIn;
+                loggedOut = (_b = to.data) === null || _b === void 0 ? void 0 : _b.loggedOut;
+                if (!(loggedIn || loggedOut)) return [3 /*break*/, 2];
+                return [4 /*yield*/, _factories_UserFactory__WEBPACK_IMPORTED_MODULE_7__.$user.current()];
+            case 1:
+                user = _c.sent();
+                if (user && loggedOut) {
+                    return [2 /*return*/, _router__WEBPACK_IMPORTED_MODULE_5__.$state.target("files", {}, {
+                            location: "replace",
+                        })];
+                }
+                else if (!user && loggedIn) {
+                    return [2 /*return*/, _router__WEBPACK_IMPORTED_MODULE_5__.$state.target("login", {}, {
+                            location: "replace",
+                        })];
+                }
+                _c.label = 2;
+            case 2: return [2 /*return*/];
+        }
+    });
+}); });
+_router__WEBPACK_IMPORTED_MODULE_5__.$transition.onBefore({}, function () {
+    _factories_CrudFactory__WEBPACK_IMPORTED_MODULE_6__.$crud.toggleLoading(true);
+});
+_router__WEBPACK_IMPORTED_MODULE_5__.$transition.onSuccess({}, function () {
+    _factories_CrudFactory__WEBPACK_IMPORTED_MODULE_6__.$crud.toggleLoading(false);
+});
+_router__WEBPACK_IMPORTED_MODULE_5__.$transition.onError({}, function () {
+    _factories_CrudFactory__WEBPACK_IMPORTED_MODULE_6__.$crud.toggleLoading(false);
+});
+function AppComponent() {
+    var _this = this;
+    var _a = __read(react__WEBPACK_IMPORTED_MODULE_0__.useState(null), 2), anchorEl = _a[0], setAnchorEl = _a[1];
+    var classes = useStyles({});
+    var user = (0,_factories_UserFactory__WEBPACK_IMPORTED_MODULE_7__.useCurrentUser)();
+    var handleClose = function () {
+        setAnchorEl(null);
+    };
+    var Links = [
+        // {
+        //     label: "Dashboard",
+        //     sref: "dashboard"
+        // },
+        {
+            label: "Files",
+            sref: "files",
+        },
+        // {
+        //     label: "Shared Files",
+        //     sref: "sharedFiles"
+        // },
+        {
+            label: "Shared With Me",
+            sref: "sharedWithMeFiles",
+        },
+        // {
+        //   label: "Signed Files",
+        //   sref: "SignedDocument",
+        // },
+        {
+            label: "Reviewed Files",
+            sref: "reviewFiles",
+        },
+    ];
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_pickers__WEBPACK_IMPORTED_MODULE_11__.M, { utils: _date_io_moment__WEBPACK_IMPORTED_MODULE_3__["default"] }, 
+    // @ts-ignore
+    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_crud_react__WEBPACK_IMPORTED_MODULE_9__.CrudProvider, { crud: _factories_CrudFactory__WEBPACK_IMPORTED_MODULE_6__.$crud },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_uirouter_react__WEBPACK_IMPORTED_MODULE_4__.UIRouter, { router: _router__WEBPACK_IMPORTED_MODULE_5__.router },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_12__["default"], { theme: _theme__WEBPACK_IMPORTED_MODULE_2__.theme },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], { container: true, wrap: "nowrap" },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], { item: true, xs: true, container: true, direction: "column" },
+                        user && (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_14__["default"], { elevation: 1, className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(classes.root), position: "static" },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_15__["default"], { className: "pl-0" },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], { item: true, xs: true, className: "pl-3" },
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_16__["default"], { variant: "h6" }, "PDF Signed App")),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], null,
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], { container: true, className: "desktop-menu p-1 p-1-all" },
+                                        Links.map(function (link, index) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], { key: index },
+                                            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_uirouter_react__WEBPACK_IMPORTED_MODULE_4__.UISref, { to: link.sref },
+                                                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_17__["default"], { size: "small", color: "inherit", className: "link-button" }, link.label)))); }),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], null,
+                                            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_17__["default"], { size: "small", color: "inherit", className: "link-button", onClick: function () { return __awaiter(_this, void 0, void 0, function () {
+                                                    return __generator(this, function (_a) {
+                                                        switch (_a.label) {
+                                                            case 0: return [4 /*yield*/, _factories_UserFactory__WEBPACK_IMPORTED_MODULE_7__.$user.logout()];
+                                                            case 1:
+                                                                _a.sent();
+                                                                _router__WEBPACK_IMPORTED_MODULE_5__.$state.go("login");
+                                                                return [2 /*return*/];
+                                                        }
+                                                    });
+                                                }); } }, "Logout"))),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], { className: "mobile-menu" },
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_18__["default"], { onClick: function (event) {
+                                                return setAnchorEl(event.currentTarget);
+                                            }, color: "inherit" },
+                                            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_feather__WEBPACK_IMPORTED_MODULE_19__["default"], null)),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_20__["default"], { anchorEl: anchorEl, open: Boolean(anchorEl), onClose: handleClose },
+                                            Links.map(function (link, index) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_uirouter_react__WEBPACK_IMPORTED_MODULE_4__.UISref, { to: link.sref },
+                                                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_21__["default"], { onClick: handleClose }, link.label))); }),
+                                            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_21__["default"], { onClick: function () { return __awaiter(_this, void 0, void 0, function () {
+                                                    return __generator(this, function (_a) {
+                                                        switch (_a.label) {
+                                                            case 0: return [4 /*yield*/, _factories_UserFactory__WEBPACK_IMPORTED_MODULE_7__.$user.logout()];
+                                                            case 1:
+                                                                _a.sent();
+                                                                _router__WEBPACK_IMPORTED_MODULE_5__.$state.go("login");
+                                                                return [2 /*return*/];
+                                                        }
+                                                    });
+                                                }); } }, "Logout"))))))),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], { item: true, xs: true, container: true, direction: "column", className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(classes.appContainer) },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_uirouter_react__WEBPACK_IMPORTED_MODULE_4__.UIView, null))),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_material_crud__WEBPACK_IMPORTED_MODULE_8__.ProgressIndicator, null),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_material_crud__WEBPACK_IMPORTED_MODULE_8__.NotifySnackbar, { autoHideDuration: 5000 }),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_material_crud__WEBPACK_IMPORTED_MODULE_8__.AlertDialog, null),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_material_crud__WEBPACK_IMPORTED_MODULE_8__.ConfirmDialog, null)))))));
+}
+
+
+/***/ }),
+
+/***/ "./src/factories/CrudFactory.ts":
+/*!**************************************!*\
+  !*** ./src/factories/CrudFactory.ts ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "$crud": () => (/* binding */ $crud),
+/* harmony export */   "CrudFactory": () => (/* binding */ CrudFactory)
+/* harmony export */ });
+/* harmony import */ var _crud_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @crud/core */ "./node_modules/@crud/core/index.js");
+/* harmony import */ var _crud_web__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @crud/web */ "./node_modules/@crud/web/index.js");
+/* harmony import */ var _crud_web__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_crud_web__WEBPACK_IMPORTED_MODULE_1__);
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+var messages = {
+    401: "Invalid username or password",
+    404: "Not Found",
+};
+var CrudFactory = /** @class */ (function (_super) {
+    __extends(CrudFactory, _super);
+    function CrudFactory() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.baseUrl = {"API_URL":"https://pdf-app.onrender.com/"}.API_URL;
+        _this.getUrl = function () {
+            var segments = [];
+            for (var _i = 0; _i < arguments.length; _i++) {
+                segments[_i] = arguments[_i];
+            }
+            return segments.reduce(function (url, segment) { return url + segment; }, _this.baseUrl);
+        };
+        return _this;
+    }
+    CrudFactory.prototype.get = function (url, data, requestOptions) {
+        if (data === void 0) { data = {}; }
+        if (requestOptions === void 0) { requestOptions = {}; }
+        return __awaiter(this, void 0, Promise, function () {
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.send(__assign({ method: "GET", url: url,
+                        data: data }, requestOptions))];
+            });
+        });
+    };
+    CrudFactory.prototype.post = function (url, data, requestOptions) {
+        if (data === void 0) { data = {}; }
+        if (requestOptions === void 0) { requestOptions = {}; }
+        return __awaiter(this, void 0, Promise, function () {
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.send(__assign({ method: "POST", url: url,
+                        data: data }, requestOptions))];
+            });
+        });
+    };
+    CrudFactory.prototype.put = function (url, data, requestOptions) {
+        if (data === void 0) { data = {}; }
+        if (requestOptions === void 0) { requestOptions = {}; }
+        return __awaiter(this, void 0, Promise, function () {
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.send(__assign({ method: "PUT", url: url,
+                        data: data }, requestOptions))];
+            });
+        });
+    };
+    CrudFactory.prototype.delete = function (url, data, requestOptions) {
+        if (data === void 0) { data = {}; }
+        if (requestOptions === void 0) { requestOptions = {}; }
+        return __awaiter(this, void 0, Promise, function () {
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.send(__assign({ method: "DELETE", url: url,
+                        data: data }, requestOptions))];
+            });
+        });
+    };
+    CrudFactory.prototype.send = function (requestOptions) {
+        if (requestOptions === void 0) { requestOptions = {}; }
+        return __awaiter(this, void 0, Promise, function () {
+            var url, data, method, _a, notify, options, fullUrl, queryString, res, response, status_1, _b, message, is_success, e_1, status;
+            return __generator(this, function (_c) {
+                switch (_c.label) {
+                    case 0:
+                        url = requestOptions.url, data = requestOptions.data, method = requestOptions.method, _a = requestOptions.notify, notify = _a === void 0 ? true : _a;
+                        options = __assign(__assign({}, requestOptions.ajaxOptions), { method: method });
+                        options.headers = __assign(__assign({}, options.headers), { Accept: "application/json", Authorization: localStorage.getItem("login_token") });
+                        if (!(data instanceof FormData)) {
+                            options.headers["Content-Type"] = "application/json";
+                        }
+                        fullUrl = this.getUrl(url);
+                        if (options.method === "GET") {
+                            queryString = new URLSearchParams(JSON.parse(JSON.stringify(data)));
+                            fullUrl += "?" + queryString;
+                        }
+                        else if (data instanceof FormData) {
+                            options.body = data;
+                        }
+                        else {
+                            options.body = JSON.stringify(data);
+                        }
+                        res = {
+                            data: [],
+                            message: "",
+                            type: "error",
+                            status: null,
+                        };
+                        _c.label = 1;
+                    case 1:
+                        _c.trys.push([1, 8, , 9]);
+                        return [4 /*yield*/, fetch(fullUrl, options)];
+                    case 2:
+                        response = _c.sent();
+                        if (!(response.status === 200)) return [3 /*break*/, 4];
+                        return [4 /*yield*/, response.json()];
+                    case 3:
+                        res = _c.sent();
+                        status_1 = res.status, _b = res.message, message = _b === void 0 ? "We're facing some technical issue. Please try again after some time" : _b;
+                        is_success = status_1 === 200;
+                        return [3 /*break*/, 7];
+                    case 4:
+                        _c.trys.push([4, , 6, 7]);
+                        return [4 /*yield*/, response.json()];
+                    case 5:
+                        res = _c.sent();
+                        return [3 /*break*/, 7];
+                    case 6: throw {
+                        message: res.message,
+                        status: response.status,
+                    };
+                    case 7: return [3 /*break*/, 9];
+                    case 8:
+                        e_1 = _c.sent();
+                        console.error(e_1);
+                        this.notify({
+                            message: e_1.message,
+                            type: "error",
+                        });
+                        throw e_1;
+                    case 9:
+                        status = res.status;
+                        if (status !== 200)
+                            throw res;
+                        return [2 /*return*/, res];
+                }
+            });
+        });
+    };
+    return CrudFactory;
+}(_crud_core__WEBPACK_IMPORTED_MODULE_0__.CrudRequest));
+
+var $crud = new CrudFactory();
+$crud.config(_crud_web__WEBPACK_IMPORTED_MODULE_1__.chooseFile);
+
+
+/***/ }),
+
+/***/ "./src/factories/UserFactory.ts":
+/*!**************************************!*\
+  !*** ./src/factories/UserFactory.ts ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "$user": () => (/* binding */ $user),
+/* harmony export */   "UserFactory": () => (/* binding */ UserFactory),
+/* harmony export */   "useCurrentUser": () => (/* binding */ useCurrentUser),
+/* harmony export */   "useCurrentUserData": () => (/* binding */ useCurrentUserData)
+/* harmony export */ });
+/* harmony import */ var _CrudFactory__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CrudFactory */ "./src/factories/CrudFactory.ts");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../store */ "./src/store.ts");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+var UserFactory = /** @class */ (function () {
+    function UserFactory() {
+        var user = this.get();
+        _store__WEBPACK_IMPORTED_MODULE_2__.store.dispatch({
+            type: _store__WEBPACK_IMPORTED_MODULE_2__.SET_USER,
+            user: user,
+        });
+    }
+    UserFactory.prototype.login = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var data;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, _CrudFactory__WEBPACK_IMPORTED_MODULE_0__.$crud.post("user/login", params)];
+                    case 1:
+                        data = (_a.sent()).data;
+                        this.set(data);
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    UserFactory.prototype.logout = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                this.removeToken();
+                this.remove();
+                return [2 /*return*/];
+            });
+        });
+    };
+    UserFactory.prototype.current = function () {
+        return __awaiter(this, void 0, Promise, function () {
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.get()];
+            });
+        });
+    };
+    UserFactory.prototype.rememberCredentials = function (credentials) {
+        localStorage.setItem("cred", btoa(JSON.stringify(credentials)));
+    };
+    UserFactory.prototype.forgetCredentials = function () {
+        localStorage.removeItem("cred");
+    };
+    UserFactory.prototype.getRememberedCredentials = function () {
+        try {
+            return JSON.parse(atob(localStorage.getItem("cred")));
+        }
+        catch (e) {
+            return null;
+        }
+    };
+    UserFactory.prototype.set = function (user) {
+        localStorage.setItem("user", btoa(JSON.stringify(user)));
+        _store__WEBPACK_IMPORTED_MODULE_2__.store.dispatch({
+            type: _store__WEBPACK_IMPORTED_MODULE_2__.SET_USER,
+            user: user,
+        });
+        this.setToken(user.token);
+    };
+    UserFactory.prototype.get = function () {
+        try {
+            return JSON.parse(atob(localStorage.getItem("user")));
+        }
+        catch (e) {
+            console.warn(e);
+            return null;
+        }
+    };
+    UserFactory.prototype.setToken = function (token) {
+        localStorage.setItem("login_token", token);
+    };
+    UserFactory.prototype.removeToken = function () {
+        localStorage.removeItem("login_token");
+    };
+    UserFactory.prototype.getToken = function () {
+        return localStorage.getItem("login_token");
+    };
+    UserFactory.prototype.remove = function () {
+        localStorage.removeItem("user");
+        _store__WEBPACK_IMPORTED_MODULE_2__.store.dispatch({
+            type: _store__WEBPACK_IMPORTED_MODULE_2__.SET_USER,
+            user: null,
+        });
+    };
+    return UserFactory;
+}());
+
+var $user = new UserFactory();
+function useCurrentUser() {
+    return (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) { return state.user; });
+}
+function useCurrentUserData() {
+    return $user.get();
+}
+
+
+/***/ }),
+
+/***/ "./src/index.ts":
+/*!**********************!*\
+  !*** ./src/index.ts ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var moment_timezone__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! moment-timezone */ "./node_modules/moment-timezone/index.js");
+/* harmony import */ var moment_timezone__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(moment_timezone__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _AppComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AppComponent */ "./src/AppComponent.tsx");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./store */ "./src/store.ts");
+/* harmony import */ var _utils_prepareAssets__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./utils/prepareAssets */ "./src/utils/prepareAssets.ts");
+
+
+
+
+
+
+
+(0,_utils_prepareAssets__WEBPACK_IMPORTED_MODULE_6__.prepareAssets)();
+react_dom__WEBPACK_IMPORTED_MODULE_2__.render(react__WEBPACK_IMPORTED_MODULE_3__.createElement(react_redux__WEBPACK_IMPORTED_MODULE_4__.Provider, {
+    store: _store__WEBPACK_IMPORTED_MODULE_5__.store,
+    children: react__WEBPACK_IMPORTED_MODULE_3__.createElement(_AppComponent__WEBPACK_IMPORTED_MODULE_1__.AppComponent),
+}), document.querySelector("#app"));
+
+
+/***/ }),
+
+/***/ "./src/router.ts":
+/*!***********************!*\
+  !*** ./src/router.ts ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "$state": () => (/* binding */ $state),
+/* harmony export */   "$transition": () => (/* binding */ $transition),
+/* harmony export */   "router": () => (/* binding */ router)
+/* harmony export */ });
+/* harmony import */ var _uirouter_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @uirouter/react */ "./node_modules/@uirouter/react/lib-esm/index.js");
+
+var router = new _uirouter_react__WEBPACK_IMPORTED_MODULE_0__.UIRouterReact();
+var states = [
+    {
+        url: "/",
+        name: "login.**",
+        lazyLoad: function () { return __webpack_require__.e(/*! import() */ "src_pages_LoginPage_tsx").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/LoginPage */ "./src/pages/LoginPage.tsx")); },
+    },
+    {
+        url: "/register",
+        name: "signupUser.**",
+        lazyLoad: function () { return Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_styled-components_dist_styled-components_browser_esm_js"), __webpack_require__.e("vendors-node_modules_react-feather_dist_icons_eye-off_js-node_modules_react-feather_dist_icon-ff5a74"), __webpack_require__.e("src_pages_SignUpPage_tsx")]).then(__webpack_require__.bind(__webpack_require__, /*! ./pages/SignUpPage */ "./src/pages/SignUpPage.tsx")); },
+    },
+    {
+        url: "/dashboard",
+        name: "dashboard.**",
+        lazyLoad: function () { return Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_react-signature-canvas_build_index_js"), __webpack_require__.e("src_Dashboard_tsx")]).then(__webpack_require__.bind(__webpack_require__, /*! ./Dashboard */ "./src/Dashboard.tsx")); },
+    },
+    {
+        url: "/files",
+        name: "files.**",
+        lazyLoad: function () { return Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_react-feather_dist_icons_edit_js-node_modules_react-feather_dist_icons_f-e1775d"), __webpack_require__.e("src_pages_Files_tsx")]).then(__webpack_require__.bind(__webpack_require__, /*! ./pages/Files */ "./src/pages/Files.tsx")); },
+    },
+    {
+        url: "/shared-with-me-files",
+        name: "sharedWithMeFiles.**",
+        lazyLoad: function () { return __webpack_require__.e(/*! import() */ "src_pages_SharedWithMe_tsx").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/SharedWithMe */ "./src/pages/SharedWithMe.tsx")); },
+    },
+    {
+        url: "/shared-files",
+        name: "sharedFiles.**",
+        lazyLoad: function () { return Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_pdftron_webviewer_webviewer_min_js"), __webpack_require__.e("src_pages_SharedFiles_tsx")]).then(__webpack_require__.bind(__webpack_require__, /*! ./pages/SharedFiles */ "./src/pages/SharedFiles.tsx")); },
+    },
+    {
+        url: "/file-viewer?:fileId",
+        name: "fileViewer.**",
+        lazyLoad: function () { return Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_styled-components_dist_styled-components_browser_esm_js"), __webpack_require__.e("vendors-node_modules_react-feather_dist_icons_chevron-left_js-node_modules_react-feather_dist-2384c8"), __webpack_require__.e("src_FileViewer_tsx")]).then(__webpack_require__.bind(__webpack_require__, /*! ./FileViewer */ "./src/FileViewer.tsx")); },
+    },
+    {
+        url: "/signed-files",
+        name: "SignedDocument.**",
+        lazyLoad: function () { return __webpack_require__.e(/*! import() */ "src_pages_SignedDocument_tsx").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/SignedDocument */ "./src/pages/SignedDocument.tsx")); },
+    },
+    {
+        url: "/review-file-viewer?:fileId",
+        name: "reviewFileViewer.**",
+        lazyLoad: function () { return Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_pdftron_webviewer_webviewer_min_js"), __webpack_require__.e("src_pages_ReviewFileViewer_tsx")]).then(__webpack_require__.bind(__webpack_require__, /*! ./pages/ReviewFileViewer */ "./src/pages/ReviewFileViewer.tsx")); },
+    },
+    {
+        url: "/reviewed-files",
+        name: "reviewFiles.**",
+        lazyLoad: function () { return __webpack_require__.e(/*! import() */ "src_pages_ReviewFiles_tsx").then(__webpack_require__.bind(__webpack_require__, /*! ./pages/ReviewFiles */ "./src/pages/ReviewFiles.tsx")); },
+    }
+];
+states.forEach(function (state) { return router.stateRegistry.register(state); });
+router.urlRouter.otherwise("/");
+router.plugin(_uirouter_react__WEBPACK_IMPORTED_MODULE_0__.hashLocationPlugin);
+router.plugin(_uirouter_react__WEBPACK_IMPORTED_MODULE_0__.servicesPlugin);
+var $state = router.stateService;
+var $transition = router.transitionService;
+
+
+/***/ }),
+
+/***/ "./src/store.ts":
+/*!**********************!*\
+  !*** ./src/store.ts ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SET_ACTIVE_STATE": () => (/* binding */ SET_ACTIVE_STATE),
+/* harmony export */   "SET_USER": () => (/* binding */ SET_USER),
+/* harmony export */   "store": () => (/* binding */ store)
+/* harmony export */ });
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+
+var initialState = {
+    user: null,
+    active_state: null
+};
+var store = (0,redux__WEBPACK_IMPORTED_MODULE_0__.createStore)(function (state, action) {
+    if (state === void 0) { state = initialState; }
+    var type = action.type;
+    switch (type) {
+        case SET_USER:
+            return __assign(__assign({}, state), { user: action.user });
+        case SET_ACTIVE_STATE:
+            return __assign(__assign({}, state), { active_state: action.active_state });
+        default:
+            return state;
+    }
+});
+var SET_USER = Symbol("SET_USER");
+var SET_ACTIVE_STATE = Symbol("SET_ACTIVE_STATE");
+
+
+/***/ }),
+
+/***/ "./src/theme.ts":
+/*!**********************!*\
+  !*** ./src/theme.ts ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "theme": () => (/* binding */ theme)
+/* harmony export */ });
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/styles/responsiveFontSizes.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/styles/createTheme.js");
+
+var primary = {
+    50: '#e6e6ea',
+    100: '#c1c1cb',
+    200: '#9897a9',
+    300: '#6f6d86',
+    400: '#504e6c',
+    500: '#312f52',
+    600: '#2c2a4b',
+    700: '#252341',
+    800: '#1f1d38',
+    900: '#131228',
+    A100: '#7269ff',
+    A200: '#4236ff',
+    A400: '#1103ff',
+    A700: '#0d00e9',
+    main: '#212121',
+    'contrastDefaultColor': 'light',
+};
+var secondary = {
+    50: '#fdebe4',
+    100: '#fbcebd',
+    200: '#f8ad91',
+    300: '#f58c64',
+    400: '#f37343',
+    500: '#f15a22',
+    600: '#ef521e',
+    700: '#ed4819',
+    800: '#eb3f14',
+    900: '#e72e0c',
+    A100: '#ffffff',
+    A200: '#ffe2de',
+    A400: '#ffb5ab',
+    A700: '#ff9f91',
+    main: '#f15a22',
+    'contrastDefaultColor': 'dark',
+};
+var theme = (0,_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["default"])((0,_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    palette: {
+        primary: primary,
+        secondary: secondary
+    },
+    overrides: {
+        MuiRadio: {
+            root: {
+                padding: 2
+            }
+        }
+    },
+    typography: {
+        fontSize: 13,
+        fontFamily: "Muli"
+    }
+}));
+
+
+/***/ }),
+
+/***/ "./src/utils/prepareAssets.ts":
+/*!************************************!*\
+  !*** ./src/utils/prepareAssets.ts ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getAsset": () => (/* binding */ getAsset),
+/* harmony export */   "prepareAssets": () => (/* binding */ prepareAssets)
+/* harmony export */ });
+var scripts = [
+    {
+        name: 'pdfjsLib',
+        src: 'https://unpkg.com/pdfjs-dist@2.3.200/build/pdf.min.js',
+    },
+    {
+        name: 'PDFLib',
+        src: 'https://unpkg.com/pdf-lib@1.4.0/dist/pdf-lib.min.js',
+    },
+    {
+        name: 'download',
+        src: 'https://unpkg.com/downloadjs@1.4.7',
+    },
+    {
+        name: 'makeTextPDF',
+        src: 'https://cdn.jsdelivr.net/gh/snamoah/react-pdf-editor/public/makeTextPDF.js',
+    },
+    { name: 'w3Color', src: 'https://www.w3schools.com/lib/w3color.js' },
+];
+var assets = {};
+var getAsset = function (scriptName) { return assets[scriptName]; };
+var prepareAssets = function () {
+    // prepare scripts
+    scripts.forEach(function (_a) {
+        var name = _a.name, src = _a.src;
+        assets[name] = new Promise(function (resolve, reject) {
+            var script = document.createElement('script');
+            script.src = src;
+            script.onload = function () {
+                resolve(window[name]);
+                console.log(name + " is loaded.");
+            };
+            script.onerror = function () {
+                return reject("The script " + name + " didn't load correctly.");
+            };
+            document.body.appendChild(script);
+        });
+    });
+};
+var fonts = {
+    Courier: {
+        correction: function (size, lineHeight) {
+            return (size * lineHeight - size) / 2 + size / 6;
+        },
+    },
+    Helvetica: {
+        correction: function (size, lineHeight) {
+            return (size * lineHeight - size) / 2 + size / 10;
+        },
+    },
+    'Times-Roman': {
+        correction: function (size, lineHeight) {
+            return (size * lineHeight - size) / 2 + size / 7;
+        },
+    },
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/webpack/hot sync ^\\.\\/log$":
+/*!***************************************************************!*\
+  !*** ./node_modules/webpack/hot/ sync nonrecursive ^\.\/log$ ***!
+  \***************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var map = {
+	"./log": "./node_modules/webpack/hot/log.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/webpack/hot sync ^\\.\\/log$";
+
+/***/ })
+
+},
+/******/ __webpack_require__ => { // webpackRuntimeModules
+/******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+/******/ __webpack_require__.O(0, ["vendor"], () => (__webpack_exec__("./src/index.ts"), __webpack_exec__("./src/index.scss"), __webpack_exec__("./node_modules/webpack-dev-server/client/index.js?http://localhost:8080")));
+/******/ var __webpack_exports__ = __webpack_require__.O();
+/******/ }
+]);
+//# sourceMappingURL=main.js.map
